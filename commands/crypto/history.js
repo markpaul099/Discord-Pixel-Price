@@ -165,8 +165,8 @@ module.exports = {
       let max = coinData[coinData.length - 1][1];
       let percent = ((max - min) * 100) / max;
       let sign = "";
-      if (Math.sign(percent) > 0) sign = "+";
-      if (Math.sign(percent) < 0) sign = "-";
+      if (Math.sign(percent) > 0) sign = "\u200E +";
+      if (Math.sign(percent) < 0) sign = "\u200E -";
       return (
         sign +
         " " +
