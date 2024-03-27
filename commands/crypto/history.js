@@ -113,8 +113,9 @@ module.exports = {
             {
               label: convert,
               data: datas,
-              backgroundColor: "#)=ecc501",
+              backgroundColor: "#ecc501",
               borderColor: "#ecc501",
+              yAxisID: 'right-y-axis'
             },
           ],
         },
@@ -127,20 +128,19 @@ module.exports = {
                   switch (period) {
                     case DEFAULT_PERIOD_7_DAY:
                       return index % 7 === 0 ? this.getLabelForValue(val) : "";
-                      break;
                     case DEFAULT_PERIOD_14_DAY:
                       return index % 14 === 0 ? this.getLabelForValue(val) : "";
-                      break;
                     case DEFAULT_PERIOD_30_DAY:
                       return index % 30 === 0 ? this.getLabelForValue(val) : "";
-                      break;
                     default:
                       return index % 3 === 0 ? this.getLabelForValue(val) : "";
-                      break;
                   }
                 },
               },
             },
+            'right-y-axis': {
+              position: 'right',
+            }
           },
           elements: {
             point: {
