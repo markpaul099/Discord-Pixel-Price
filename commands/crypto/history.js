@@ -23,7 +23,7 @@ module.exports = {
       option
         .setName("symbol")
         .setDescription(
-          "Insert a crypto currency symbol like 'pixels' or with pairing 'pixels/php'. Default pairing: php "
+          "Insert a crypto currency symbol like 'pixels' or with pairing 'pixels/php'. Default pairing: php"
         )
     )
     .addStringOption((option) =>
@@ -81,7 +81,6 @@ module.exports = {
     for (let i = 0; i < coinData.length; i++) {
       let date = new Date(coinData[i][0]);
 
-      // Build label
       if (period === DEFAULT_PERIOD_1_DAY) {
         labels.push(date.getHours() + "h" + date.getMinutes());
       } else {
@@ -94,7 +93,6 @@ module.exports = {
         );
       }
 
-      // data
       data.push(coinData[i][1]);
     }
 
@@ -113,9 +111,9 @@ module.exports = {
             {
               label: convert,
               data: datas,
-              backgroundColor: "#ecc501",
+              backgroundColor: "#)=ecc501",
               borderColor: "#ecc501",
-              yAxisID: 'right-y-axis'
+              yAxisID: 'right-y-axis',
             },
           ],
         },
