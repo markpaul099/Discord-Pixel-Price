@@ -26,9 +26,6 @@ Dockerfile
 .censitive
 config-sample.json
 .vscode
-delete-commands.js
-deploy-commands.js
-commands
 
 # Runtime data
 pids
