@@ -1,6 +1,6 @@
 // code from https://github.com/BlueSkunka/forge-crypto
 const rp = require("request-promise");
-const { EmbedBuilder, AttachmentBuilder } = require("discord.js");
+const { EmbedBuilder, AttachmentBuilder, SlashCommandBuilder } = require("discord.js");
 const { ChartJSNodeCanvas } = require("chartjs-node-canvas");
 const DEFAULT_COIN = "pixels";
 const DEFAULT_CONVERT = "php";
